@@ -335,6 +335,17 @@ header{
 
 /* advantages styling */
 
+.advantages-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-color: var(--card-background-color);
+    border-radius: 4px;
+}
 .advantages-style{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -366,44 +377,23 @@ header{
     margin-left: 30px;
 }
 .attention{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-    background: var(--card-background-color);
-    border-radius: 4px;
+    width: 70px;
+    height: 70px;
 }
+
 .punctuality{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-    background: var(--card-background-color);
-    border-radius: 4px;
+    width: 70px;
+    height: 70px;
 }
+
 .planning{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-    background: var(--card-background-color);
-    border-radius: 4px;
+    width: 70px;
+    height: 70px;
 }
+
 .technology{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-    background: var(--card-background-color);
-    border-radius: 4px;
+    width: 70px;
+    height: 70px;
 }
 /* END advantages section */
 
@@ -473,17 +463,15 @@ header{
 /* END project section */
 
 /* our team */
-
-/* .socialmedia{
-    display: inline;
-    justify-content: center;
-    align-items: center;
-} */
-
-.socialmedia:hover,
-.socialmedia:focus{
-    background-color: var(--acent-color);
+.our-team-list{
+    display: flex;
+    align-items: baseline;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
 .our-team-container{
     text-align: center;
     padding-top: 30px;
@@ -531,76 +519,61 @@ header{
 
 /* our-team-icons */
 
-.icon-instagram{
-    width: 20px;
-    height: 20px;
-    fill: var(--secondary-text-color);
-
-}
-.icon-instagram:hover,
-.icon-instagram:focus{
-    fill: var(--primary-white-color);
-}
-.icon-twitter{
-    width: 20px;
-    height: 16.25px;
-    fill: var(--secondary-text-color);
-}
-.icon-twitter:hover,
-.icon-twitter:focus{
-    fill: var(--primary-white-color);
-}
-.icon-facebook{
-    width: 20px;
-    height: 20px;
-    fill: var(--secondary-text-color);
-}
-.icon-facebook:hover,
-.icon-facebook:focus{
-    fill: var(--primary-white-color);
-}
-.icon-linkedin{
-    width: 20px;
-    height: 20px;
-    fill: var(--secondary-text-color);
-}
-.icon-linkedin:hover,
-.icon-linkedin:focus{
-    fill: var(--primary-white-color);
+.list-of-icons{
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
 }
 .icons{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     list-style: none;
     width: 44px;
     height: 44px;
-    border-radius: 50%;
     /* border: 1px solid black; */
-
-}
-
-.icons:hover,
-.icons:focus{
-    background-color: var(--acent-color);
 }
 
 .icons:not(:last-child){
     margin-right: 10px;
 }
 
-.list-of-icons{
+.socialmedia{
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding-left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+
+    color: var(--secondary-text-color);
 }
-.our-team-list{
-    display: flex;
-    align-items: baseline;
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+.socialmedia:hover,
+.socialmedia:focus{
+    background-color: var(--acent-color);
+    color: var(--primary-white-color);
+   
+}
+.icon-instagram{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.icon-twitter{
+    width: 20px;
+    height: 16.25px;
+    fill: currentColor;
+}
+
+.icon-facebook{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.icon-linkedin{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
 
 /* END our-team-icons */
@@ -617,7 +590,10 @@ header{
     padding-left: 0;
     margin: 0;
 }
-
+.clients-item{
+    width: 170px;
+    height: 92px;
+}
 .clients-item:not(:last-child){
     margin-right: 30px;
 }
@@ -626,8 +602,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 92px; 
+    width: 100%;
+    height: 100%; 
+    color: var(--secondary-text-color);
     border: 1px solid var(--clients-border-color);
     border-radius: 4px;
 }
@@ -635,72 +612,43 @@ header{
 .client:hover,
 .client:focus{
     background-color: var(--acent-color);
+    color: var(--primary-white-color);
 }
 
 .icon-client-one{
-    fill: var(--secondary-text-color);
+    fill: currentColor;
     width: 41px;
     height: 46.7px;
-}
-
-.icon-client-one:hover,
-.icon-client-one:focus{
-    fill: var(--primary-white-color);
 }
 
 .icon-client-two{
     width: 40px;
     height: 52px;
-    fill: var(--secondary-text-color);
-}
-
-.icon-client-two:hover,
-.icon-client-two:focus{
-    fill: var(--primary-white-color);
+    fill: currentColor;
 }
 
 .icon-client-three{
     width: 43px;
     height: 41px;
-    fill: var(--secondary-text-color);
-}
-
-.icon-client-three:hover,
-.icon-client-three:focus{
-    fill: var(--primary-white-color);
+    fill: currentColor;
 }
 
 .icon-client-four{
     width: 84px;
     height: 40px;
-    fill: var(--secondary-text-color);
-}
-
-.icon-client-four:hover,
-.icon-client-four:focus{
-    fill: var(--primary-white-color);
+    fill: currentColor;
 }
 
 .icon-client-five{
     width: 62px;
     height: 45px;
-    fill: var(--secondary-text-color);
-}
-
-.icon-client-five:hover,
-.icon-client-five:focus{
-    fill: var(--primary-white-color);
+    fill: currentColor;
 }
 
 .icon-client-six{
     width: 93px;
     height: 43px;
-    fill: var(--secondary-text-color);
-}
-
-.icon-client-six:hover,
-.icon-client-six:focus{
-    fill: var(--primary-white-color);
+    fill: currentColor;
 }
 
 /* END our-clients */
